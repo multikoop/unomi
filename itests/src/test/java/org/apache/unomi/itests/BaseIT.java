@@ -171,6 +171,8 @@ public abstract class BaseIT {
                 logLevel(LogLevel.INFO),
                 editConfigurationFilePut("etc/org.ops4j.pax.logging.cfg", "log4j2.rootLogger.level", "INFO"),
                 editConfigurationFilePut("etc/org.apache.karaf.features.cfg", "serviceRequirements", "disable"),
+                editConfigurationFilePut("etc/org.apache.unomi.persistence.elasticsearch.cfg", "minimalElasticSearchVersion", "1.3.8"),
+
 //                editConfigurationFilePut("etc/org.ops4j.pax.web.cfg", "org.osgi.service.http.port", HTTP_PORT),
 //                systemProperty("org.osgi.service.http.port").value(HTTP_PORT),
                 systemProperty("org.ops4j.pax.exam.rbc.rmi.port").value("1199"),

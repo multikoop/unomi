@@ -156,10 +156,9 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <plugin>
+                    <!--plugin>
                         <groupId>com.github.alexcojocaru</groupId>
-                        <artifactId>elasticsearch-maven-plugin</artifactId>
-                        <!-- REPLACE THE FOLLOWING WITH THE PLUGIN VERSION YOU NEED -->
+                        <artifactId>elasticsearch-maven-plugin</artifactId>                        
                         <version>6.16</version>
                         <configuration>
                             <clusterName>contextElasticSearchITests</clusterName>
@@ -178,11 +177,7 @@
                                 </properties>
                             </instanceSettings>
                         </configuration>
-                        <executions>
-                            <!--
-                                The elasticsearch maven plugin goals are by default bound to the
-                                pre-integration-test and post-integration-test phases
-                            -->
+                        <executions>                            
                             <execution>
                                 <id>start-elasticsearch</id>
                                 <phase>pre-integration-test</phase>
@@ -198,7 +193,7 @@
                                 </goals>
                             </execution>
                         </executions>
-                    </plugin>
+                    </plugin-->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-failsafe-plugin</artifactId>
